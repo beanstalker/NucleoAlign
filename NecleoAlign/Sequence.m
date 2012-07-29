@@ -71,6 +71,11 @@
     return percentGC;
 }
 
+-(int) length
+{
+    return (int) [seq length];
+}
+
 -(NSString *) dnaOrRNA
 {
     if (type == RNA) {

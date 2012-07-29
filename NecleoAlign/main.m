@@ -10,6 +10,15 @@
 #import "SubstitutionMatrix.h"
 #import "Sequence.h"
 
+void *emalloc(size_t s) {
+    void *result = malloc(s);
+    if (NULL == result) {
+        NSLog(@"Memory allocation failure!");
+        exit(1);
+    }
+    return result;
+}
+
 void readFileToSequence(NSString *filepath, Sequence **seq)
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -20,7 +29,7 @@ void readFileToSequence(NSString *filepath, Sequence **seq)
     if ([fm isReadableFileAtPath:filepath] == NO) {
         NSLog(@"Can't read %@", filepath);
         *seq = nil;
-        exit(2);
+        exit(3);
     }
     data = [NSString stringWithContentsOfFile:filepath
                                  usedEncoding:&encoding
@@ -33,7 +42,7 @@ void readFileToSequence(NSString *filepath, Sequence **seq)
     }
     if (data == nil) {
         NSLog(@"Can't read %@. Check encoding (Try UTF8).", filepath);
-        exit(3);
+        exit(4);
     }
     NSLog(@"Encoding of %@ was %lu", filepath, encoding);
     
@@ -49,15 +58,23 @@ int main(int argc, const char * argv[])
     NSProcessInfo *process = [NSProcessInfo processInfo];
     NSArray *args = [process arguments];
     Sequence *seq1, *seq2;
+    int **scores;
     
     if ([args count] != 3) {
         NSLog(@"Usage: %@ file1 file2", [process processName]);
-        return 1;
+        return 2;
     }
     
     readFileToSequence([args objectAtIndex:1], &seq1);
     readFileToSequence([args objectAtIndex:2], &seq2);
     
+    scores = emalloc(([seq1 length] + 1) * sizeof scores[0]);
+    for (int i = 0; i <= [seq1 length]; i++) {
+        scores[i] = emalloc(([seq2 length] + 1) * sizeof scores[i][0]);
+    }
+    
+    [seq1 release];
+    [seq2 release];
     [pool drain];
     return 0;
 }
