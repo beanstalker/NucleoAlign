@@ -7,16 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SubstitutionMatrix.h"
 
 int main(int argc, const char * argv[])
 {
-
-    @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
-    }
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    SubstitutionMatrix *subMat = [[SubstitutionMatrix alloc] init];
+    
+    [pool drain];
     return 0;
 }
-

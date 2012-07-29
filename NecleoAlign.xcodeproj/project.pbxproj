@@ -10,6 +10,7 @@
 		C1C7C6F315C5032C001CB6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C7C6F215C5032C001CB6A0 /* Foundation.framework */; };
 		C1C7C6F615C5032C001CB6A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7C6F515C5032C001CB6A0 /* main.m */; };
 		C1C7C6FA15C5032C001CB6A0 /* NecleoAlign.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */; };
+		C1C7C70215C51886001CB6A0 /* SubstitutionMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7C70115C51886001CB6A0 /* SubstitutionMatrix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C1C7C6F515C5032C001CB6A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1C7C6F815C5032C001CB6A0 /* NecleoAlign-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NecleoAlign-Prefix.pch"; sourceTree = "<group>"; };
 		C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NecleoAlign.1; sourceTree = "<group>"; };
+		C1C7C70015C51886001CB6A0 /* SubstitutionMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstitutionMatrix.h; sourceTree = "<group>"; };
+		C1C7C70115C51886001CB6A0 /* SubstitutionMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstitutionMatrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				C1C7C6F515C5032C001CB6A0 /* main.m */,
+				C1C7C70015C51886001CB6A0 /* SubstitutionMatrix.h */,
+				C1C7C70115C51886001CB6A0 /* SubstitutionMatrix.m */,
 				C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */,
 				C1C7C6F715C5032C001CB6A0 /* Supporting Files */,
 			);
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C7C6F615C5032C001CB6A0 /* main.m in Sources */,
+				C1C7C70215C51886001CB6A0 /* SubstitutionMatrix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
