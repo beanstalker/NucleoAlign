@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1C7C6F315C5032C001CB6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C7C6F215C5032C001CB6A0 /* Foundation.framework */; };
+		C1C7C6F615C5032C001CB6A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7C6F515C5032C001CB6A0 /* main.m */; };
+		C1C7C6FA15C5032C001CB6A0 /* NecleoAlign.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1C7C6EC15C5032C001CB6A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C1C7C6FA15C5032C001CB6A0 /* NecleoAlign.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C1C7C6EE15C5032C001CB6A0 /* NecleoAlign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NecleoAlign; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C7C6F215C5032C001CB6A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1C7C6F515C5032C001CB6A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1C7C6F815C5032C001CB6A0 /* NecleoAlign-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NecleoAlign-Prefix.pch"; sourceTree = "<group>"; };
+		C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NecleoAlign.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1C7C6EB15C5032C001CB6A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C7C6F315C5032C001CB6A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1C7C6E315C5032C001CB6A0 = {
+			isa = PBXGroup;
+			children = (
+				C1C7C6F415C5032C001CB6A0 /* NecleoAlign */,
+				C1C7C6F115C5032C001CB6A0 /* Frameworks */,
+				C1C7C6EF15C5032C001CB6A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1C7C6EF15C5032C001CB6A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1C7C6EE15C5032C001CB6A0 /* NecleoAlign */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1C7C6F115C5032C001CB6A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1C7C6F215C5032C001CB6A0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1C7C6F415C5032C001CB6A0 /* NecleoAlign */ = {
+			isa = PBXGroup;
+			children = (
+				C1C7C6F515C5032C001CB6A0 /* main.m */,
+				C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */,
+				C1C7C6F715C5032C001CB6A0 /* Supporting Files */,
+			);
+			path = NecleoAlign;
+			sourceTree = "<group>";
+		};
+		C1C7C6F715C5032C001CB6A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1C7C6F815C5032C001CB6A0 /* NecleoAlign-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1C7C6ED15C5032C001CB6A0 /* NecleoAlign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C7C6FD15C5032C001CB6A0 /* Build configuration list for PBXNativeTarget "NecleoAlign" */;
+			buildPhases = (
+				C1C7C6EA15C5032C001CB6A0 /* Sources */,
+				C1C7C6EB15C5032C001CB6A0 /* Frameworks */,
+				C1C7C6EC15C5032C001CB6A0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NecleoAlign;
+			productName = NecleoAlign;
+			productReference = C1C7C6EE15C5032C001CB6A0 /* NecleoAlign */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1C7C6E515C5032C001CB6A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "John Hervey";
+			};
+			buildConfigurationList = C1C7C6E815C5032C001CB6A0 /* Build configuration list for PBXProject "NecleoAlign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C1C7C6E315C5032C001CB6A0;
+			productRefGroup = C1C7C6EF15C5032C001CB6A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1C7C6ED15C5032C001CB6A0 /* NecleoAlign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1C7C6EA15C5032C001CB6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C7C6F615C5032C001CB6A0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1C7C6FB15C5032C001CB6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C1C7C6FC15C5032C001CB6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C1C7C6FE15C5032C001CB6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NecleoAlign/NecleoAlign-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1C7C6FF15C5032C001CB6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NecleoAlign/NecleoAlign-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1C7C6E815C5032C001CB6A0 /* Build configuration list for PBXProject "NecleoAlign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C7C6FB15C5032C001CB6A0 /* Debug */,
+				C1C7C6FC15C5032C001CB6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1C7C6FD15C5032C001CB6A0 /* Build configuration list for PBXNativeTarget "NecleoAlign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C7C6FE15C5032C001CB6A0 /* Debug */,
+				C1C7C6FF15C5032C001CB6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1C7C6E515C5032C001CB6A0 /* Project object */;
+}
