@@ -11,6 +11,7 @@
 		C1C7C6F615C5032C001CB6A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7C6F515C5032C001CB6A0 /* main.m */; };
 		C1C7C6FA15C5032C001CB6A0 /* NecleoAlign.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */; };
 		C1C7C70215C51886001CB6A0 /* SubstitutionMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7C70115C51886001CB6A0 /* SubstitutionMatrix.m */; };
+		C1C7C70515C52A06001CB6A0 /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7C70415C52A06001CB6A0 /* Sequence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NecleoAlign.1; sourceTree = "<group>"; };
 		C1C7C70015C51886001CB6A0 /* SubstitutionMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstitutionMatrix.h; sourceTree = "<group>"; };
 		C1C7C70115C51886001CB6A0 /* SubstitutionMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstitutionMatrix.m; sourceTree = "<group>"; };
+		C1C7C70315C52A06001CB6A0 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
+		C1C7C70415C52A06001CB6A0 /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				C1C7C6F515C5032C001CB6A0 /* main.m */,
+				C1C7C70315C52A06001CB6A0 /* Sequence.h */,
+				C1C7C70415C52A06001CB6A0 /* Sequence.m */,
 				C1C7C70015C51886001CB6A0 /* SubstitutionMatrix.h */,
 				C1C7C70115C51886001CB6A0 /* SubstitutionMatrix.m */,
 				C1C7C6F915C5032C001CB6A0 /* NecleoAlign.1 */,
@@ -146,6 +151,7 @@
 			files = (
 				C1C7C6F615C5032C001CB6A0 /* main.m in Sources */,
 				C1C7C70215C51886001CB6A0 /* SubstitutionMatrix.m in Sources */,
+				C1C7C70515C52A06001CB6A0 /* Sequence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
