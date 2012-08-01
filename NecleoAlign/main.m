@@ -73,6 +73,10 @@ int main(int argc, const char * argv[])
         scores[i] = emalloc(([seq2 length] + 1) * sizeof scores[i][0]);
     }
     
+    for (int i = 0; i <= [seq1 length]; i++) {
+        free(scores[i]);
+    }
+    free(scores);
     [seq1 release];
     [seq2 release];
     [pool drain];
