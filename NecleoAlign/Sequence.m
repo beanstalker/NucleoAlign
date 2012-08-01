@@ -50,7 +50,7 @@
 
 -(BOOL) isEqual:(Sequence *)theSequence
 {
-    if ([seq isEqualToString:theSequence.seq]) {
+    if ([seq isEqualToString:[theSequence seq]]) {
         return YES;
     } else {
         return NO;
@@ -60,9 +60,11 @@
 -(id) initWithSequence:(NSString *)theSequence
 {
     self = [super init];
-    seq = [[NSString alloc] initWithString:theSequence];
-    [self calculateAndSetGCContent];
-    [self calculateNucleicAcidType];
+    if (self) {
+        seq = [[NSString alloc] initWithString:theSequence];
+        [self calculateAndSetGCContent];
+        [self calculateNucleicAcidType];
+    }
     return self;
 }
 
@@ -83,6 +85,11 @@
     } else {
         return @"DNA";
     }
+}
+
+-(const char) charAtPosition:(int)position
+{
+    return [seq characterAtIndex:position];
 }
 
 -(void) dealloc

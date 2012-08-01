@@ -28,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C1A4BA1A15C94131007D4BFD /* seq1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = seq1.txt; sourceTree = "<group>"; };
+		C1A4BA1B15C94131007D4BFD /* seq2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = seq2.txt; sourceTree = "<group>"; };
 		C1C7C6EE15C5032C001CB6A0 /* NecleoAlign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NecleoAlign; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C7C6F215C5032C001CB6A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1C7C6F515C5032C001CB6A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				C1C7C6F515C5032C001CB6A0 /* main.m */,
+				C1A4BA1A15C94131007D4BFD /* seq1.txt */,
+				C1A4BA1B15C94131007D4BFD /* seq2.txt */,
 				C1C7C70315C52A06001CB6A0 /* Sequence.h */,
 				C1C7C70415C52A06001CB6A0 /* Sequence.m */,
 				C1C7C70015C51886001CB6A0 /* SubstitutionMatrix.h */,
@@ -242,6 +246,7 @@
 				C1C7C6FF15C5032C001CB6A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

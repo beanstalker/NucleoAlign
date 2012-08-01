@@ -25,6 +25,7 @@ typedef enum {RNA, DNA} nucleicAcidType;
 -(double) percentGC;
 -(int) length;
 -(NSString *) dnaOrRNA;
+-(const char) charAtPosition:(int) position;
 -(void) dealloc;
 
 @end
