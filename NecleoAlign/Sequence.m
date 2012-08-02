@@ -22,9 +22,10 @@
                 numberGC++;
             }
         }
-        percentGC = numberGC / [seq length] * 100;
+        percentGC = (numberGC / (float) [seq length]) * 100;
     }
 }
+
 -(void) calculateNucleicAcidType
 {
     if (seq != nil) {

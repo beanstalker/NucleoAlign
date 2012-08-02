@@ -109,11 +109,17 @@ int main(int argc, const char * argv[])
     //Calculate scores and traceback
     for (int j = 1; j <= [seq1 length]; j++) {
         for (int i = 1; i <= [seq2 length]; i++) {
-            scores[j][i] = maxOfThree(scores[j - 1][i - 1] + [subMat getValueWhen:[seq1 charAtPosition:(j - 1)] isSubstitutedWith:[seq2 charAtPosition:(i - 1)]],
+            scores[j][i] = maxOfThree(scores[j - 1][i - 1] +
+                                      [subMat getValueWhen:
+                                       [seq1 charAtPosition:(j - 1)]
+                                         isSubstitutedWith:
+                                       [seq2 charAtPosition:(i - 1)]],
                                       scores[j][i - 1] + [subMat gapPenalty],
                                       scores[j - 1][i] + [subMat gapPenalty]);
             
-            if (scores[j][i] == scores[j - 1][i - 1] + [subMat getValueWhen:[seq1 charAtPosition:(j - 1)] isSubstitutedWith:[seq2 charAtPosition:(i - 1)]]) {
+            if (scores[j][i] == scores[j - 1][i - 1] +
+                [subMat getValueWhen:[seq1 charAtPosition:(j - 1)]
+                   isSubstitutedWith:[seq2 charAtPosition:(i - 1)]]) {
                 traceback[j][i] = diag;
             } else if (scores[j][i] == scores[j][i - 1] + [subMat gapPenalty]) {
                 traceback[j][i] = left;
