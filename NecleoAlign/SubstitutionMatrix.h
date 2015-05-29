@@ -11,7 +11,7 @@
 @interface SubstitutionMatrix : NSObject
 {
     NSArray *substitutionMatrix, *row0, *row1, *row2, *row3, *row4;
-    NSNumber *plusTwo, *plusOne, *minusOne;
+    NSNumber *plusOne, *plusTwo, *minusOne;
     NSString *a, *c, *g, *t;
     int gapPenalty;
 }
